@@ -1,0 +1,1447 @@
+﻿body {
+    font: normal x-small verdana,arial,helvetica,sans-serif;
+    margin: 0px;
+    padding-bottom: 20px;
+}
+
+    body.dark {
+        background-color: #262626;
+        color: #ddd;
+    }
+
+code {
+    word-wrap: break-word;
+}
+
+summary {
+    cursor: pointer;
+}
+
+.dark a {
+    color: #8cb3d9;
+}
+
+.dark input[type=text], .dark input[type=password], .dark textarea {
+    background-color: #333;
+    color: #fff;
+    border-color: #4d4d4d
+}
+
+.rank, .thumb, .score {
+    float: left;
+}
+
+.clearleft {
+    clear: left;
+}
+
+.img-blur {
+    filter: blur(10px);
+    -webkit-filter: blur(10px);
+    -moz-filter: blur(10px);
+    -o-filter: blur(10px);
+    -ms-filter: blur(10px);
+    transform: scale(1.03);
+}
+
+.post {
+    margin: 6px 0px;
+}
+
+    .post .thumb {
+        height: 52px;
+        width: 70px;
+        margin: 0px 4px;
+        position: relative;
+        overflow: hidden;
+        --background-color: #e7e7e7;
+    }
+
+        .post .thumb div {
+            height: 52px;
+            width: 70px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+
+.rank {
+    color: #c6c6c6;
+    font-size: 14px;
+    margin-top: 17px;
+    text-align: right;
+    min-width: 21px;
+}
+
+.dark .post .rank {
+    color: #646464;
+}
+
+.post .score {
+    color: #c6c6c6;
+    font-size: 12px;
+    font-weight: 700;
+    text-align: center;
+    min-width: 42px;
+}
+
+.dark .post .score {
+    color: #646464;
+}
+
+.comment .score {
+    clear: left;
+    margin-right: 4px;
+    overflow: hidden;
+}
+
+.comment .content {
+    line-height: 20px;
+    overflow: hidden;
+    max-width: 840px;
+}
+
+.comment.hidden {
+    padding-bottom: 5px;
+}
+
+    .comment.hidden .score {
+        visibility: hidden;
+    }
+
+.score {
+    display: inline-block;
+    color: #b7b7b7;
+    font-size: 20px;
+    line-height: 15px;
+}
+
+    .score .input {
+        cursor: pointer;
+    }
+
+.dark .score input {
+    color: #646464;
+}
+
+.comment .score input {
+    line-height: 17px;
+}
+
+.score .like {
+    color: #3880ff;
+}
+
+.score .dislike {
+    color: #eb445a;
+}
+
+.title a {
+    font-size: medium;
+    text-decoration: none;
+}
+
+    .title a p {
+        display: inline;
+    }
+
+.post.distinguished .title a, .post.announcement .title a,
+.dark .post.distinguished .title a:visited, .post.announcement .title a:visited {
+    color: #228822;
+    font-weight: bold;
+}
+
+.dark .title a {
+    color: #dedede;
+}
+
+    .dark .title a:visited {
+        color: #a6a6a6
+    }
+
+.post.deleted .title a {
+    text-decoration: line-through;
+}
+
+[disabled] {
+    cursor: not-allowed;
+}
+
+#loadmore [disabled], .link-btn [disabled] {
+    cursor: wait;
+}
+
+.post .title {
+    color: #888;
+    font-size: 10px;
+}
+
+.activity .post .title a {
+    font-size: medium;
+}
+
+.activity .post .title {
+    margin: 0;
+}
+
+.activity .title a {
+    font-size: 13px;
+}
+
+.activity .title {
+    margin: 5px 0px 0px 10px;
+}
+
+.activity .post {
+    margin-bottom: 10px;
+}
+
+.message {
+    margin: 10px 10px 15px 10px;
+}
+
+    .message div {
+        margin-left: 10px;
+    }
+
+    .message b {
+        color: #000;
+    }
+
+.dark .message b {
+    color: #ddd;
+}
+
+.dark .meta {
+    color: #b4b4b4;
+}
+
+.comment {
+    font-size: 14px;
+    margin: 0px 0px 5px 0px;
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    padding: 10px 10px 0px 7px;
+}
+
+.dark .comment {
+    border-color: #333;
+}
+
+.activity .comment {
+    border: 0px;
+}
+
+.comment img {
+    max-height: 300px;
+}
+
+.comment .comment {
+}
+
+    .comment .comment,
+    .comment .comment .comment .comment,
+    .comment .comment .comment .comment .comment .comment,
+    .comment .comment .comment .comment .comment .comment .comment .comment,
+    .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment {
+        background-color: #f7f7f8;
+    }
+
+.dark .comment .comment,
+.dark .comment .comment .comment .comment,
+.dark .comment .comment .comment .comment .comment .comment,
+.dark .comment .comment .comment .comment .comment .comment .comment .comment,
+.dark .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment {
+    background-color: #161616;
+}
+
+.comment .comment .comment,
+.comment .comment .comment .comment .comment,
+.comment .comment .comment .comment .comment .comment .comment,
+.comment .comment .comment .comment .comment .comment .comment .comment .comment {
+    background-color: #fff;
+}
+
+.dark .comment,
+.dark .comment .comment .comment,
+.dark .comment .comment .comment .comment .comment,
+.dark .comment .comment .comment .comment .comment .comment .comment,
+.dark .comment .comment .comment .comment .comment .comment .comment .comment .comment {
+    background-color: #121212;
+}
+
+.comment .meta {
+    font-size: 10px;
+    margin-bottom: 6px;
+}
+
+.preview h3 {
+    background-color: #f0f3fc;
+    border: 0px solid #e6e6e6;
+    border-bottom-width: 1px;
+    color: black;
+    margin: 0px;
+    padding: 10px;
+    font-size: 14px;
+}
+
+.dark .preview h3 {
+    background-color: #333;
+    border-color: #333;
+    color: #ccc;
+}
+
+.preview .comment {
+    margin-top: 5px;
+    padding: 0px;
+}
+
+    .preview .comment .content {
+        padding: 5px 10px;
+    }
+
+.meta a, .activity .meta a {
+    color: #369;
+    text-decoration: none;
+    font-size: 10px;
+    font-weight: 700;
+}
+
+.dark .meta a {
+    color: #6a98af;
+}
+
+.comment .meta a.distinguished.admin, .post.distinguished a.admin, .post.announcement a.admin {
+    background-color: #ff0011;
+    color: white;
+    font-weight: bold;
+    border-radius: 3px;
+    padding: 0px 2px;
+}
+
+.meta a:hover {
+    text-decoration: underline;
+}
+
+.comment .meta a.submitter {
+    background-color: #0055df;
+    color: white;
+    font-weight: bold;
+    border-radius: 3px;
+    padding: 0px 2px;
+}
+
+.comment .meta a.distinguished {
+    background-color: #228822;
+    color: white;
+    font-weight: bold;
+    border-radius: 3px;
+    padding: 0px 2px;
+}
+
+.commentmenu {
+    font-size: 16px;
+    margin: 0px 0px 10px 0px;
+}
+
+    .commentmenu div {
+        border-top: 1px dotted gray;
+        font-size: 12px;
+    }
+
+form.savecomment {
+    margin: 0px 0px 10px 0px;
+    width: 500px;
+}
+
+.comment > .children > form.savecomment {
+    margin: 0px 0px 10px 20px;
+}
+
+.comment .children {
+    margin: 5px 0px 10px 15px;
+}
+
+.savecomment textarea {
+    margin: 5px 0px;
+    width: 100%;
+    height: 100px;
+}
+
+.savecomment .upload label div {
+    display: inline-block;
+    border: 1px solid #ccc;
+    height: 20px;
+    line-height: 20px;
+    width: 32px;
+    position: relative;
+    background-color: #999;
+    color: #000;
+    text-align: center;
+    cursor: pointer;
+}
+
+.savecomment .upload input {
+    display: none;
+}
+
+.savecomment .right {
+    float: right;
+}
+
+    .savecomment .right a {
+        line-height: 28px;
+        font-size: 10px;
+    }
+
+.comment .meta a.minimize {
+    color: #369;
+    font-size: 10px;
+    margin-right: 2px;
+}
+
+.comment.hidden .meta a {
+    color: gray;
+    font-weight: 400;
+}
+
+    .comment.hidden .meta a:last-child {
+        font-style: italic;
+        font-weight: 700;
+    }
+
+.comment.hidden .content, .comment.hidden .children, .comment.hidden .morecomments {
+    display: none;
+}
+
+.children .morecomments {
+}
+
+.morecomments {
+    height: 20px;
+    clear: left;
+    margin: 0px 0px 10px 0px;
+    font-size: 10px;
+}
+
+    .morecomments a {
+        color: #336699;
+        font-weight: bold;
+        text-decoration: none;
+    }
+
+        .morecomments a:hover {
+            text-decoration: underline;
+        }
+
+.member, .block {
+    display: inline-block;
+    margin-bottom: 3px;
+}
+
+    .member input, .block input {
+        font-size: 10px;
+        font-weight: bold;
+        display: inline-block;
+        padding: 1px 4px;
+        border-radius: 4px;
+        border: 1px solid #444444;
+        color: white;
+        position: relative;
+        bottom: 1px;
+        cursor: pointer;
+    }
+
+    .join input, .block input {
+        background-color: green;
+    }
+
+    .leave input, .block.unblock input {
+        background-color: #cf6165;
+    }
+
+.pending input {
+    background-color: #369;
+}
+
+.left {
+    float: left;
+}
+
+span.nsfw {
+    color: #d10023;
+    font-size: 10px;
+    line-height: 14px;
+    border-radius: 3px;
+    border: 1px solid #d10023;
+    padding: 0 4px;
+    display: inline-block;
+    font-weight: 400;
+}
+
+form.nsfw {
+    text-align: center;
+    margin: 50px auto;
+    width: 650px;
+    font-size: 18px;
+}
+
+    form.nsfw div {
+        font-size: 40px;
+        background-color: #ff575b;
+        display: inline-block;
+        padding: 20px 10px;
+        border-radius: 50%;
+        font-weight: bold;
+        color: white;
+    }
+
+.gray {
+    color: #808080;
+}
+
+.morecomments .loading {
+    color: red !important;
+}
+
+.blockpopup .loading {
+    padding: 2px;
+}
+
+.error {
+    color: red;
+    font-size: 13px;
+    padding: 10px;
+}
+
+.alert {
+    color: #8080FF;
+    font-size: 13px;
+    padding: 10px;
+}
+
+.green {
+    background-color: #efffc7;
+    width: 8px;
+    display: inline-block;
+    height: 8px;
+    margin: 0 2px;
+    border-radius: 50%;
+    border: 1px solid #78b04d;
+    position: relative;
+    top: 1px;
+}
+
+.pager {
+    margin: 20px 0px;
+}
+
+    .pager a {
+        padding: 1px 4px;
+        background: #eee;
+        border: 1px solid #ddd;
+        border-radius: 3px;
+        font-weight: bold;
+        text-decoration: none;
+        color: #369;
+    }
+
+    .pager.hidden {
+        display: none;
+    }
+
+#loadmore {
+    display: none;
+}
+
+#loadmore, #end {
+    margin: 10px 0px;
+}
+
+    #loadmore.show {
+        display: block;
+    }
+
+#end {
+    visibility: hidden;
+}
+
+.buttons li {
+    display: inline;
+}
+
+    .buttons, .buttons > form input, .buttons li form input {
+        font-weight: bold;
+        font-size: 10px;
+        padding: 0;
+    }
+
+.comment .textarea {
+    width: 100%;
+}
+
+.comment .buttons {
+    margin: 3px 0px 0px 0px;
+}
+
+.comment.hidden .buttons {
+    display: none;
+}
+
+.expando blockquote, .comment blockquote {
+    margin: 5px 0 5px 15px;
+    border-left: 2px solid #c5c1ad;
+    padding: 0 8px;
+}
+
+.buttons a, .buttons > form input, .comment .buttons form input {
+    text-decoration: none;
+    color: #888;
+    display: inline-block;
+    margin-right: 5px !important;
+}
+
+    .buttons a:hover, .title a:hover, .buttons > form input:hover, .comment .buttons form input:hover {
+        text-decoration: underline;
+    }
+
+.entry {
+    color: #888;
+    overflow: hidden;
+}
+
+    .entry .buttons .blockpopup {
+        display: inline-block;
+        position: absolute;
+        border: 1px solid #888;
+        z-index: 100;
+        background-color: white;
+    }
+
+form.blockpost {
+    margin: 2px;
+}
+
+.blockpost div:last-child input {
+    margin: 4px 2px 4px 4px;
+}
+
+.expando-button {
+    width: 23px;
+    height: 23px;
+    background-color: #ccccc9;
+    border-radius: 4px;
+    margin: 0px 4px 0px 0px;
+    cursor: pointer;
+    float: left;
+}
+
+    .expando-button::before {
+        float: left;
+        position: relative;
+        color: #fff;
+        font-size: 16px;
+        left: 11px;
+        top: 3px;
+    }
+
+.Post.expando-button::before {
+    content: "p";
+}
+
+.Image.expando-button::before {
+    content: "i";
+}
+
+.Article.expando-button::before {
+    content: "a";
+}
+
+.open.expando-button {
+    border-radius: 30px;
+}
+
+    .open.expando-button::before {
+        content: "x";
+        color: #fff;
+        left: 7px;
+        top: 0px;
+        font-weight: bold;
+        font-family: sans-serif;
+    }
+
+.expando-button:hover {
+    background-color: #466599;
+}
+
+.expando-button.hidden, .children.hidden .comment, .children.hidden .morecomments {
+    display: none;
+}
+
+.hidechildren .show {
+    display: none;
+}
+
+.hidechildren.hidden .show {
+    display: inline;
+}
+
+.hidechildren.hidden .hide {
+    display: none;
+}
+
+.hidechildren span {
+    pointer-events: none;
+}
+
+.expando {
+    display: none;
+    max-width: 870px;
+    margin-top: 5px;
+    position: relative;
+    color: #000;
+}
+
+#mycommunities, #settingspopup {
+    background-color: white;
+    border: 1px solid #888;
+    display: none;
+    position: absolute;
+    z-index: 100;
+}
+
+#mycommunities {
+    top: 17px;
+    padding: 5px 0px;
+    border-width: 0px 1px 1px 0px;
+}
+
+    #mycommunities div {
+        margin: 0px 5px;
+    }
+
+    #mycommunities a:first-child {
+        text-align: right;
+    }
+
+    #mycommunities a {
+        text-decoration: none;
+        color: #369;
+        text-transform: uppercase;
+        font-size: 9px;
+        display: block;
+        padding: 0px 3px;
+    }
+
+.dark #mycommunities a {
+    color: #8cb3d9;
+}
+
+    .dark #mycommunities a:hover {
+        background-color: #3e3e3e;
+    }
+
+#mycommunities a:hover {
+    background-color: #c7def7;
+}
+
+#settingspopup {
+    right: 10px;
+    top: 45px;
+}
+
+    #settingspopup form {
+        margin: 0px;
+    }
+
+.dark #settingspopup, .dark #mycommunities {
+    background-color: #262626;
+}
+
+#settingspopup.open, #mycommunities.open {
+    display: inline-block;
+}
+
+.expando.open {
+    display: block;
+}
+
+.expando .embed {
+    text-align: center;
+}
+
+.expando .article {
+    display: block;
+    overflow: hidden;
+    resize: both;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top left;
+}
+
+    .expando .article embed {
+        width: 100%;
+        height: 100%;
+    }
+
+.expando .image {
+    display: block;
+    overflow: hidden;
+    resize: both;
+    max-width: 578px;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top left;
+}
+
+    .expando .image img {
+        visibility: hidden;
+        max-width: 100%;
+    }
+
+.expando .md {
+    background-color: #fafafa;
+    border: 1px solid #369;
+    border-radius: 7px;
+    padding: 5px 10px;
+    margin: 5px auto;
+    max-width: 578px;
+    font-size: 14px;
+    overflow: auto;
+}
+
+    .expando .md img {
+        max-width: 100%;
+    }
+
+.expando.open.showimage .md {
+    display: none;
+}
+
+.dark .expando .md {
+    background-color: #262626;
+    color: #ddd;
+    border-color: #666;
+}
+
+.expando p, .comment p, .message p {
+    margin-top: 0;
+    margin-bottom: 2px;
+}
+
+.search {
+    font-size: 13px;
+    color: gray;
+    font-weight: 700;
+    margin: 10px 5px 20px 30px;
+    max-width: 605px;
+}
+
+    .search .query {
+        white-space: nowrap;
+        padding-right: 142px;
+    }
+
+        .search .query input[type=text] {
+            width: 100%;
+            margin-bottom: 5px;
+        }
+
+        .search .query input {
+            font-size: 15px;
+            padding: 5px;
+        }
+
+    .search div:last-child input {
+        margin: 2px 0px;
+    }
+
+    .search label {
+        white-space: nowrap;
+    }
+
+#sideToggle {
+    text-align: right;
+}
+
+.side {
+    display: none;
+    margin: 0 auto;
+    font-size: 12px;
+    width: 300px;
+    padding-right: 5px;
+    margin-bottom: 10px;
+}
+
+    .side img, .md img {
+        max-width: 100%;
+    }
+
+main {
+    position: relative;
+    margin: 0px 10px;
+}
+
+@media (min-width: 900px) {
+    .side {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    main {
+        padding-right: 316px;
+        margin-right: 0px;
+    }
+}
+
+.side form {
+    margin: 0px 0px 5px 0px;
+}
+
+.side input[type=text] {
+    width: 285px;
+    padding: 6px;
+    margin: 0px;
+    font-size: 13px;
+    border: 1px solid gray;
+}
+
+.side .stats {
+    padding: 5px;
+    border: 1px solid #5f99cf;
+    background-color: #EFF7FF;
+    border-radius: 3px;
+}
+
+.dark .side .stats {
+    background-color: #393939;
+    border-color: #666;
+}
+
+.side .stats b span {
+    font-size: 22px;
+}
+
+.side .banner {
+    width: 100%;
+    height: 150px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    margin: 5px 0px;
+}
+
+.user.side b {
+    font-size: 18px;
+}
+
+.side .login {
+    border: 1px solid gray;
+    margin: 10px 0px;
+    padding: 0;
+    overflow: hidden;
+}
+
+    .side .login input[type=text],
+    .side .login input[type=password] {
+        font-size: 11px;
+        border: 1px solid #999;
+        width: 125px;
+        margin: 5px 0px 0px 5px;
+        padding: 6px;
+    }
+
+    .side .login input[type=submit] {
+        margin: 5px;
+        float: right;
+    }
+
+.create a div {
+    margin: 5px 0px;
+    background-color: #EFF7FF;
+    text-align: center;
+    padding: 5px;
+    border: 1px solid #369;
+}
+
+.dark .create a div {
+    background-color: #444444;
+    border: 0;
+}
+
+.create a div:hover {
+    background-color: #369;
+}
+
+.dark .create a div:hover {
+    background-color: #333333;
+}
+
+.create a {
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 13px;
+    color: #369;
+}
+
+.dark .create a {
+    color: white;
+}
+
+.create a:hover {
+    color: white;
+}
+
+.dark .create a:hover {
+    color: #0cbe30;
+}
+
+.dark .create input[type=submit],
+.dark .search .query input,
+.dark .create input[type=file],
+.dark .create select {
+    color: #fff;
+    border: 1px outset gray;
+    background-color: #4d4d4d;
+}
+
+h1, h2 {
+    margin: 5px 0px;
+}
+
+.age {
+    border-top: 1px solid black;
+    text-align: right;
+    color: #888;
+    padding: 2px 5px 0px 0px;
+    margin-bottom: 10px;
+}
+
+    .age a {
+        text-decoration: none;
+        color: #369;
+    }
+
+.moderators {
+    border: 1px solid black;
+    padding: 3px;
+    margin-bottom: 5px;
+}
+
+    .moderators a {
+        text-decoration: none;
+        color: #369;
+    }
+
+.dark .moderators a {
+    color: #6a98af;
+}
+
+main > .community {
+    margin: 20px 50px;
+    max-width: 840px;
+    position: relative;
+}
+
+.community .description {
+    padding: 2px 5px;
+    background-color: #fafafa;
+    border: 1px solid #CCC;
+    border-radius: 7px;
+    font-size: 14px;
+    margin-bottom: 3px;
+    max-height: 170px;
+    overflow: auto;
+}
+
+.dark .community .description {
+    background-color: #333;
+    color: #ddd;
+    border-color: #777;
+}
+
+.community .details {
+    margin-left: 36px;
+}
+
+nav {
+    border-bottom: 1px solid #00a846;
+    background-color: #9ad59b;
+    z-index: 99;
+    margin-bottom: 5px;
+    position: sticky;
+    top: 0;
+}
+
+.dark nav {
+    background-color: #696969;
+}
+
+nav .communities {
+    background-color: #f0f0f0;
+    color: gray;
+    padding: 3px;
+    white-space: nowrap;
+    overflow: hidden;
+    border-bottom: 1px solid gray;
+    text-transform: uppercase;
+    font-size: 9px;
+}
+
+    nav .communities a {
+        margin: 0px 2px;
+    }
+
+.dark nav .communities {
+    background-color: #cccccc;
+}
+
+    .dark nav .communities a {
+        color: #000;
+    }
+
+nav .communities a.more {
+    background-color: #f0f0f0;
+    color: black;
+    padding: 0px 5px;
+    font-weight: bold;
+    position: absolute;
+    right: 0;
+    margin: 0;
+}
+
+.dark nav .communities a.more {
+    background-color: #cccccc;
+}
+
+.orangered, .orangered b {
+    color: orangered !important;
+}
+
+nav .communities a {
+    text-decoration: none;
+    color: black;
+}
+
+nav .title a:hover {
+    text-decoration: underline;
+}
+
+nav .title, nav > span {
+    font-size: 15px;
+    font-weight: 700;
+    margin: 0px 3px 0px 2.5px;
+    color: black;
+    text-decoration: none;
+    font-variant: small-caps;
+}
+
+.dark nav .title, .dark nav > span {
+    color: #ececec;
+}
+
+nav a.title {
+    margin-left: 70px;
+}
+
+nav .host {
+    padding: 0px 3px 1px 3px;
+    font-size: 12px;
+}
+
+nav .spacer {
+    height: 40px;
+    position: relative;
+}
+
+nav .space a {
+    z-index: 100;
+}
+
+nav .icon {
+    height: 54px;
+    width: 60px;
+    margin: 2px 5px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center bottom;
+}
+
+    nav .icon img {
+        max-width: 100%;
+        height: 100%;
+    }
+
+nav .tabs {
+    overflow-x: auto;
+}
+
+nav ul {
+    list-style: none;
+    margin: 5px 2.5px 0px 2.5px;
+    padding: 0;
+    display: inline-block;
+    vertical-align: bottom;
+}
+
+nav li {
+    white-space: nowrap;
+    margin: 0px 1px;
+    padding: 0px;
+    display: inline-block;
+    margin-top: 5px;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+nav ul a {
+    color: #369;
+    background-color: #eff7ff;
+    text-decoration: none;
+    padding: 2px 6px 0 6px;
+}
+
+.dark nav ul a {
+    background-color: #262626;
+    color: #ddd;
+}
+
+.selected {
+    font-weight: bold;
+}
+
+nav .selected a {
+    color: orangered;
+    background-color: white;
+    border: 1px solid #00a846;
+    border-bottom: 1px solid white;
+}
+
+.dark nav .selected a {
+    color: #d25a32;
+    border-bottom: 1px solid #262626;
+}
+
+nav .right {
+    position: absolute;
+    right: 0px;
+    background-color: #EFFFEF;
+    padding: 4px 6px;
+    line-height: 12px;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+    margin-right: 10px;
+    color: gray;
+    font-size: 10px;
+    z-index: 101;
+}
+
+.dark nav .right {
+    background-color: #333333;
+}
+
+nav .right a.mailbox {
+    font-size: 21px;
+    position: relative;
+    top: 4px;
+    color: gray;
+}
+
+nav .right a, nav .right input[type=submit] {
+    color: #369;
+    text-decoration: none;
+}
+
+.dark nav .right a, .dark nav .right input[type=submit] {
+    color: #dadada;
+}
+
+.clickable {
+    color: #369;
+    cursor: pointer;
+}
+
+.dark .clickable {
+    color: #dadada;
+}
+
+nav .right form, .comment form, form.link-btn {
+    display: inline-block;
+    margin: 0;
+}
+
+    nav .right form input, .comment .buttons input, form.link-btn input {
+        background-color: rgba(0, 0, 0, 0);
+        border: 0px;
+        font-size: unset;
+        font-family: unset;
+        cursor: pointer;
+        padding: 0;
+        margin: 0;
+    }
+
+.menu {
+    border-bottom: 1px dotted gray;
+    padding: 0px 0px 5px 20px;
+    color: gray;
+}
+
+    .menu a {
+        margin: 0px 2.5px;
+        color: gray;
+        font-weight: bold;
+    }
+
+    .commentmenu .selected, .menu .selected {
+        color: black;
+        font-weight: bold;
+        text-decoration: none;
+    }
+
+.dark .commentmenu .selected, .dark .menu .selected {
+    color: #ddd;
+}
+
+.dark .commentmenu a, .dark .menu {
+    color: #6a98af;
+}
+
+.warning {
+    background-color: #f6e69f;
+    border-color: #ffa500;
+    border-style: solid;
+    border-width: 1px;
+    padding: 5px 10px;
+    margin: 5px 10px;
+}
+
+.dark .warning {
+    background-color: #544400;
+}
+
+.highlight {
+    background-color: #ffc;
+    padding-left: 5px;
+}
+
+.dark .highlight {
+    background-color: #4c4c4c;
+}
+
+form.create {
+    width: 520px;
+}
+
+    form.create div {
+        margin: 10px 0px;
+        padding: 5px 5px 10px 5px;
+        background-color: #cee3f8;
+        border-radius: 4px;
+    }
+
+.dark form.create div {
+    background-color: #181818
+}
+
+form.create label {
+    display: block;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+form.create div > input, form.create div textarea {
+    width: 98%;
+}
+
+form.create input[type=checkbox] {
+    display: block;
+}
+
+form.create input[type=file], form.create select {
+    margin-top: 5px;
+}
+
+.required::before {
+    content: "*";
+    color: red;
+}
+
+.preferences {
+    margin: 20px;
+}
+
+    .preferences div {
+        font-size: 13px;
+        margin: 10px;
+    }
+
+        .preferences div:last-child label {
+            text-align: left;
+            font-size: 10px;
+        }
+
+    .preferences label {
+        display: inline-block;
+        width: 150px;
+        margin-right: 5px;
+        text-align: right;
+    }
+
+    .preferences input[type=submit] {
+        margin-top: 10px;
+    }
+
+.signup {
+    margin: 0px 30px;
+}
+
+    .signup h2 {
+        margin-bottom: 10px;
+    }
+
+    .signup > div {
+        float: left;
+        margin: 30px;
+    }
+
+        .signup > div:first-child {
+            border-right: 1px solid #e0e0e0;
+            padding-right: 60px;
+        }
+
+    .root label, .signup label {
+        font-size: 15px;
+    }
+
+        .signup label div {
+            margin-bottom: 5px;
+        }
+
+.root {
+    margin: 30px;
+}
+
+    .root input, .signup input {
+        font-size: 15px;
+        padding: 6px 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+
+        .root input[type="text"] {
+            width: 300px;
+        }
+
+        .signup input[type=submit] {
+            margin-top: 20px;
+            float: right;
+        }
+
+.signup .question {
+    max-width: 500px;
+    font-size: 13px;
+}
