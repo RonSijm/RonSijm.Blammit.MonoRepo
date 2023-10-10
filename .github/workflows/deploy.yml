@@ -36,7 +36,7 @@ jobs:
       - name: Commit wwwroot to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          GITHUB_TOKEN: ${{ secrets.TOKEN }}
-          BRANCH: gh-pages
-          FOLDER: dist/Blammit/wwwroot
-          SINGLE-COMMIT: true
+          github_token: ${{ secrets.TOKEN }}
+          branch: gh-pages
+          folder: dist/Blammit/wwwroot
+          single-commit: true
