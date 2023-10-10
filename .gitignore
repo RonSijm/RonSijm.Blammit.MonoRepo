@@ -174,3 +174,4 @@ $RECYCLE.BIN/
 # dlls moved to wwwroot
 **/wwwroot/_framework**
 /RonSijm.Blammit.Tests/Communities/communities.json
+dist/
