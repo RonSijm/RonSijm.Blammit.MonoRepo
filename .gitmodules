@@ -1,0 +1,9 @@
+[submodule "src/RonSijm.Statezor"]
+	path = src/RonSijm.Statezor
+	url = https://github.com/RonSijm/RonSijm.Statezor
+[submodule "src/RonSijm.Blammit"]
+	path = src/RonSijm.Blammit
+	url = https://github.com/RonSijm/RonSijm.Blammit
+[submodule "src/RonSijm.Lemmy.ServiceAgent"]
+	path = src/RonSijm.Lemmy.ServiceAgent
+	url = https://github.com/RonSijm/RonSijm.Lemmy.ServiceAgent
