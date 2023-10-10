@@ -34,7 +34,7 @@ jobs:
         run: dotnet publish src/RonSijm.Blammit/src/RonSijm.Blammit/RonSijm.Blammit.csproj -c:Release -p:GHPages=true -o dist/Blammit --nologo
 
       - name: Commit wwwroot to GitHub Pages
-        uses: JamesIves/github-pages-deploy-action@4
+        uses: JamesIves/github-pages-deploy-action@v4
         with:
           token: ${{ secrets.TOKEN }}
           branch: gh-pages
